@@ -127,29 +127,32 @@ var canvasUtil = window.canvasUtil = (function() {
 
         // Constructor for point type
         point: function(x, y) {
-            return {
+            var p = {
                 x: Math.round(x),
                 y: Math.round(y)
             };
+            return p;
         },
 
         // Constructor for rect type
         rect: function(x, y, w, h) {
-            return {
+            var r = {
                 x: Math.round(x),
                 y: Math.round(y),
                 width: Math.round(w),
                 height: Math.round(h)
             };
+            return r;
         },
 
         // Constructor for circle type
         circle: function(x, y, r) {
-            return {
+            var c = {
                 x: Math.round(x),
                 y: Math.round(y),
                 radius: Math.round(r)
             };
+            return c;
         },
 
         // Fast atan2
